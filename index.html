@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content=" width=device-width initial-scale=1.0">
@@ -16,80 +16,64 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Project 1</title>
 
-</head>
+    </head>
 
-<body class="flex-column min-100 vh">
-    <header>
-        <h1 class="header">Music Mood Ring</h1>
-        <ul>
-            <li>
-                <a href="#music-selector">Mood Selctor</a>
-            </li>
-            <li>
-                <a href="#playlist-result">Your Personal Playlist</a>
-            </li>
-        </ul>
-    </header>
+    <body class="flex-column min-100 vh">
+        <header>
+            <h1 class="header">Music Mood Ring</h1>
+            <ul>
+                <li>
+                    <a href="#music-selector">Mood Selctor</a>
+                </li>
+                <li>
+                    <a href="#playlist-result">Your Personal Playlist</a>
+                </li>
+            </ul>
+        </header>
 
-    <aside id="music-selector" class="">
-        <div class="">
-            <div class="card">
-                <h2 class="card-header text-uppercase">Search music by mood</h2>
-                <form id="user-form" class="card-body">
-                    <label class="form-label">Select your mood</label>
-                    <input name="mood" id="mood" type="text" autofocus="true" class="form-input" />
-                </form>
-            </div>
-        
-            <div class="card">
-                <h3 class="card-header text-uppercase"></h3>
-            </div>
-        </div>
-    </aside>    
-    
-    <main id="playlist-result" class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
-            <div class="card">
-                <h3 class="card-header text-uppercase">Search music by mood</h3>
-                <form id="user-form" class="card-body">
-                    <label class="form-label" for="XXXXX">XXXX</label>
-                    <input name="mood" id="mood" type="text" autofocus="true" class="form-input" />
-                    <button type="submit" class="btn">How do you Feel?</button>
-                </form>
-            </div>
-
-            <div class="card">
-                <h3 class="card-header text-uppercase">Search by Artist</h3>
-                <div class="card-body" id="xxxxx">
-                    <form id="user-form" class="card-body">
-                        <label class="form-label" for="XXXXX">XXXX</label>
-                        <input name="mood" id="mood" type="text" autofocus="true" class="form-input" />
-                        <button type="submit" class="btn">How do you Feel?</button>
-
+        <main id="playlist-result" class="flex-row justify-space-between flex-wrap">
+            <aside id="music-selector" class="col-12 col-md-4">
+                <div class="container">
+                    <div class="card">
+                        <h2 class="card-header text-uppercase">Search music by mood</h2>
+                        <form id="user-form" class="card-body">
+                            <label class="form-label">Select Mood</label>
+                            <input name="mood" id="mood" type="text" autofocus="true" class="form-input" />
+                            <button type="submit" class="btn">How do you Feel?</button>
+                        </form>
+                    </div>
+            
+                    <div class="card">
+                        <h2 class="card-header text-uppercase">Search by Artist</h2>
+                        <form id="user-form" class="card-body">
+                            <label class="form-label" >Select Mood</label>
+                            <input name="artist" id="artist" type="text" autofocus="true" class="form-input" />
+                            <button type="submit" class="btn">How do you Feel?</button>
+                        </form>
+                    </div>
                 </div>
+            </aside>
+
+            
+            <div class="col-12 col-md-8">
+                <h2 class="subtitle">Mood Playlist: <span id="mood-search-term"></span></h2>
+                <div id ="playlist-container" class="list-group"></div>
             </div>
-        </div>
+            <!-- match the music to the mood-->
+            <!-- images container -->
+            <!-- use of musicovery api -->
+            <!-- use of api based on area -->
+            <!-- use of bootstramp -->
+            <!-- use Modals -->
+            <!-- interactive -->
+            <!-- create cards  -->
+        </main>
 
-        <!-- match the music to the mood-->
-        <!-- images container -->
-        <!-- use of musicovery api -->
-        <!-- use of api based on area -->
-        <!-- use of bootstramp -->
-        <!-- use Modals -->
-        <!-- interactive -->
-        <!-- create cards  -->
+        <footer class="foot">
+            <p>Made with love ❤️ by Kiessa, Michael, and Josh</p>
+        </footer>
 
-        
-    </main>
-
-    
-
-    <script src="./assets/js/script.js"></script>
+     <script src="./assets/js/script.js"></script>
 </body>
-
-
-<footer class="foot">
-    <p>Made with love ❤️ by Kiessa, Michael, and Josh</p>
-</footer>
 
 </html>
