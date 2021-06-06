@@ -18,38 +18,36 @@
 
 </head>
 
-<aside class="">
-
-    <div class="">
-
-    </div>
-    <div class="">
-
-
-    </div>
-
-
-</aside>
-
 <body class="flex-column min-100 vh">
-    <header class="hero">
+    <header>
         <h1 class="header">Music Mood Ring</h1>
+        <ul>
+            <li>
+                <a href="#music-selector">Mood Selctor</a>
+            </li>
+            <li>
+                <a href="#playlist-result">Your Personal Playlist</a>
+            </li>
+        </ul>
     </header>
 
-    <aside class="">
-
+    <aside id="music-selector" class="">
         <div class="">
-
+            <div class="card">
+                <h2 class="card-header text-uppercase">Search music by mood</h2>
+                <form id="user-form" class="card-body">
+                    <label class="form-label">Select your mood</label>
+                    <input name="mood" id="mood" type="text" autofocus="true" class="form-input" />
+                </form>
+            </div>
+        
+            <div class="card">
+                <h3 class="card-header text-uppercase"></h3>
+            </div>
         </div>
-        <div class="">
-
-
-        </div>
-
-
     </aside>    
     
-    <main class="flex-row justify-space-between">
+    <main id="playlist-result" class="flex-row justify-space-between">
         <div class="col-12 col-md-4">
             <div class="card">
                 <h3 class="card-header text-uppercase">Search music by mood</h3>
