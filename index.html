@@ -18,16 +18,16 @@
 
     </head>
 
-    <body class="flex-column min-100 vh">
+    <body class="flex-column min-100 vh bg-secondary">
         <header class="bg-info text-dark d-flex flex-wrap justify-content-between">
-            <h1 class="header">Music Mood Ring</h1>
+            <h1 class="header font-weight-bold">Music Mood Ring</h1>
             <nav>
                 <ul class="d-flex">
                     <li class="d-inline-block">
-                        <a href="#music-selector" class="text-dark">Mood Selctor</a>
+                        <a href="#music-selector" class="text-dark font-weight-bold">Mood Selctor</a>
                     </li>
                     <li class="d-inline-block">
-                        <a href="#playlist-result" class="text-dark">Your Personal Playlist</a>
+                        <a href="#playlist-result" class="text-dark font-weight-bold">Your Personal Playlist</a>
                     </li>
                 </ul>
             </nav>
@@ -36,21 +36,21 @@
         <main id="playlist-result" class="flex-row justify-space-between">
             <aside id="music-selector" class="col-12 col-md-4 float-left">
                 <div class="container">
-                    <div class="card">
+                    <div class="card bg-info">
                         <h2 class="card-header text-uppercase">Search music by mood</h2>
-                        <form id="user-form" class="card-body">
+                        <form id="user-form" class="card-body bg-secondary">
                             <label class="form-label">Select Mood</label>
                             <input name="mood" id="mood" type="text" autofocus="true" class="form-input form-control" />
-                            <button type="submit" class="btn form-control">How do you Feel?</button>
+                            <button type="submit" class="btn-primary form-control">How do you Feel?</button>
                         </form>
                     </div>
             
-                    <div class="card">
+                    <div class="card bg-info">
                         <h2 class="card-header text-uppercase">Search by Artist</h2>
-                        <form id="user-form" class="card-body">
+                        <form id="user-form" class="card-body bg-secondary">
                             <label class="form-label" >Select Mood</label>
                             <input name="artist" id="artist" type="text" autofocus="true" class="form-input form-control" />
-                            <button type="submit" class="btn form-control">How do you Feel?</button>
+                            <button type="submit" class="btn-primary form-control">How do you Feel?</button>
                         </form>
                     </div>
                 </div>
