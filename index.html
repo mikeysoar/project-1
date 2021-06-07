@@ -19,16 +19,18 @@
     </head>
 
     <body class="flex-column min-100 vh">
-        <header>
+        <header class="bg-info text-dark d-flex flex-wrap justify-content-between">
             <h1 class="header">Music Mood Ring</h1>
-            <ul>
-                <li>
-                    <a href="#music-selector">Mood Selctor</a>
-                </li>
-                <li>
-                    <a href="#playlist-result">Your Personal Playlist</a>
-                </li>
-            </ul>
+            <nav>
+                <ul class="d-flex">
+                    <li class="d-inline-block">
+                        <a href="#music-selector" class="text-dark">Mood Selctor</a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="#playlist-result" class="text-dark">Your Personal Playlist</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main id="playlist-result" class="flex-row justify-space-between">
@@ -38,8 +40,8 @@
                         <h2 class="card-header text-uppercase">Search music by mood</h2>
                         <form id="user-form" class="card-body">
                             <label class="form-label">Select Mood</label>
-                            <input name="mood" id="mood" type="text" autofocus="true" class="form-input" />
-                            <button type="submit" class="btn">How do you Feel?</button>
+                            <input name="mood" id="mood" type="text" autofocus="true" class="form-input form-control" />
+                            <button type="submit" class="btn form-control">How do you Feel?</button>
                         </form>
                     </div>
             
@@ -47,8 +49,8 @@
                         <h2 class="card-header text-uppercase">Search by Artist</h2>
                         <form id="user-form" class="card-body">
                             <label class="form-label" >Select Mood</label>
-                            <input name="artist" id="artist" type="text" autofocus="true" class="form-input" />
-                            <button type="submit" class="btn">How do you Feel?</button>
+                            <input name="artist" id="artist" type="text" autofocus="true" class="form-input form-control" />
+                            <button type="submit" class="btn form-control">How do you Feel?</button>
                         </form>
                     </div>
                 </div>
@@ -70,11 +72,11 @@
             <!-- create cards  -->
         </main>
 
-        <footer class="foot">
+        <footer class="foot text-center font-weight-bold bg-info">
             <p>Made with love ❤️ by Kiessa, Michael, and Josh</p>
         </footer>
 
-     <script src="./assets/js/script.js"></script>
-</body>
+        <script src="./assets/js/playlist.js"></script>
 
+    </body>
 </html>
