@@ -5,6 +5,9 @@
 header nav ul li a {
     text-decoration: none;
 }
+main aside {
+    padding-top: 10.5px;
+}
 .d-inline-block {
     padding-right: 10px;
     padding-top: 14px;
