@@ -34,7 +34,7 @@ We easily constructed our HTML and CSS together and work very well together.
 ---
 The more we worked together the further we got!
 
-<img src="/images/app.png">
+<img src="./images/app.png">
 
 ---
 
@@ -48,7 +48,7 @@ Kiessa - My team-mates!
 
 <a href="#">GitHub Repo</a>
 
-<a href="#"> #</a>
+<a href="https://www.google.com/">Google</a>
 
 <a href="#">#</a>
 
