@@ -1,39 +1,30 @@
-var musicSelector = document.querySelector("music-selector");
-var formLabel = document.querySelector("#form-label");
+var userFomrEl = document.querySelector("#user-form");
+var nameInputEl = document.querySelector("#artistname");
 
-// var formSubmitHandler = function (event) {
-//     event.preventDefault();
-//     console.log(event);
+var getMusicVideo = function(search) { 
+    // format the itunes api
+    var apiUrl = "https://itunes.apple.com/search?term=" + search; 
 
-//     // get value from input element
-//     var username = nameInputEl.value.trim();
-
-//     if (username) {
-//         getUserRepos(username);
-
-//         // clear oldcontent
-//         repoContainerEl.textContent = "";
-//         nameInputEl.value = "";
-//     } else {
-//         alert("Please select a Feeling!");
-//     }
-// };
-
-var buttonClickHnadler
-
-var getMusicRepos = function () {
-    // format the musicovery api url
-    var musicRepos = "https//musicovery.com/api/V6/search.php" + "" + "/repos";
-
-    // make a request to the url
-    fetch(musicRepos)
-        .then(function (response) {
-            if (response.ok) {
-                response.json().then(function (data) {
-                    displayRepose();
-                });
-            } else {
-                alert("Error: Try another mood");
-            }
+    // fetch information from the itunes website
+    fetch(apiUrl).then(function(response){
+        response.json().then(function(data) {
+            console.log(data);
         });
+    });
 };
+
+var artistSubmitHandler = function(event) {
+    event.preventDefault();
+    // get value for artist name
+    var artist = nameInputEl.value.trim();
+
+    if (artist) {
+        getMusicVideo(artist);
+        nameInputEl.value = "";
+    } else {
+        alert("Enter a name of an artist");
+    }
+    console.log(event);
+};
+
+userFomrEl.addEventListener("submit", artistSubmitHandler);
