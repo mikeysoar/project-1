@@ -17,3 +17,9 @@ header nav ul li a {
     font-size: large;
 }
 
+.btn:hover {
+    color: rgb(161, 98, 98);
+    background-color: lightblue;
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+  }
