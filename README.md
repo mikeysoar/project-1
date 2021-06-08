@@ -41,7 +41,7 @@ The more we worked together the further we got!
 Our favorite things about this project.
 Josh - The HTML and CSS came very easily.
 Michael - Working in collaboration and in a team.
-Kiessa - My team mates!
+Kiessa - My team-mates!
 
 <img src="./images/groupshot.png"/>
 ## Resources 
