@@ -1,6 +1,6 @@
-# project-1
-Kiessa, Michael and Josh 8:10 PM 06/07/21
 # Project-1
+
+Kiessa, Michael and Josh 8:10 PM 06/07/21
 > Music by mood
 ---
 ### Table of Contents
@@ -29,12 +29,12 @@ I think we collectively struggled with the initial Git process, being able to al
 ## Victories
 We easily constructed our HTML and CSS together and work very well together.
 
-<img src= ""/>
+<img src="./images/HTML.png"/>
 
 ---
 The more we worked together the further we got!
 
-<img src= ""/>
+<img src="/images/app.png">
 
 ---
 
@@ -43,7 +43,7 @@ Josh - The HTML and CSS came very easily.
 Michael - Working in collaboration and in a team.
 Kiessa - My team mates!
 
-<img src= ""/>
+<img src="./images/groupshot.png"/>
 ## Resources 
 
 <a href="#">GitHub Repo</a>
