@@ -18,69 +18,67 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Project 1</title>
 
-</head>
+    </head>
 
-<aside class="">
+    <body class="flex-column min-100 vh">
+        <header class="bg-info text-dark d-flex flex-wrap justify-content-between">
+            <h1 class="header">Music Mood Ring</h1>
+            <nav>
+                <ul class="d-flex">
+                    <li class="d-inline-block">
+                        <a href="#music-selector" class="text-dark">Mood Selctor</a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="#playlist-result" class="text-dark">Your Personal Playlist</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="">
-
-    </div>
-    <div class="">
-
-
-    </div>
-
-
-</aside>
-
-<body class="flex-column min-100 vh">
-    <header class="hero">
-        <h1 class="header">Music Mood Ring</h1>
-    </header>
-
-    <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
-            <div class="card">
-                <h3 class="card-header text-uppercase">Search music by mood</h3>
-                <form id="user-form" class="card-body">
-                    <label class="form-label" for="XXXXX">XXXX</label>
-                    <input name="mood" id="mood" type="text" autofocus="true" class="form-input" />
-                    <button type="submit" class="btn">How do you Feel?</button>
-                </form>
-            </div>
-
-            <div class="card">
-                <h3 class="card-header text-uppercase">Search by Artist</h3>
-                <div class="card-body" id="xxxxx">
-                    <form id="user-form" class="card-body">
-                        <label class="form-label" for="XXXXX">XXXX</label>
-                        <input name="mood" id="mood" type="text" autofocus="true" class="form-input" />
-                        <button type="submit" class="btn">How do you Feel?</button>
-
+        <main id="playlist-result" class="flex-row justify-space-between">
+            <aside id="music-selector" class="col-12 col-md-4 float-left">
+                <div class="container">
+                    <div class="card">
+                        <h2 class="card-header text-uppercase">Search music by mood</h2>
+                        <form id="user-form" class="card-body">
+                            <label class="form-label">Select Mood</label>
+                            <input name="mood" id="mood" type="text" autofocus="true" class="form-input form-control" />
+                            <button type="submit" class="btn form-control">How do you Feel?</button>
+                        </form>
+                    </div>
+            
+                    <div class="card">
+                        <h2 class="card-header text-uppercase">Search by Artist</h2>
+                        <form id="user-form" class="card-body">
+                            <label class="form-label" >Select Mood</label>
+                            <input name="artist" id="artist" type="text" autofocus="true" class="form-input form-control" />
+                            <button type="submit" class="btn form-control">How do you Feel?</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </aside>
 
-        <!-- match the music to the mood-->
-        <!-- images container -->
-        <!-- use of musicovery api -->
-        <!-- use of api based on area -->
-        <!-- use of bootstramp -->
-        <!-- use Modals -->
-        <!-- interactive -->
-        <!-- create cards  -->
+            <section>
+                <div class="col-12 col-md-8">
+                    <h2 class="subtitle">Mood Playlist: <span id="mood-search-term"></span></h2>
+                    <div id ="playlist-container" class="list-group"></div>
+                </div>
+            </section>
+            <!-- match the music to the mood-->
+            <!-- images container -->
+            <!-- use of musicovery api -->
+            <!-- use of api based on area -->
+            <!-- use of bootstramp -->
+            <!-- use Modals -->
+            <!-- interactive -->
+            <!-- create cards  -->
+        </main>
 
-        
-    </main>
+        <footer class="foot text-center font-weight-bold bg-info">
+            <p>Made with love ❤️ by Kiessa, Michael, and Josh</p>
+        </footer>
 
-    
+        <script src="./assets/js/playlist.js"></script>
 
-    <script src="./assets/js/script.js"></script>
-</body>
-
-
-<footer class="">
-
-</footer>
-
+    </body>
 </html>
