@@ -14,7 +14,7 @@ main aside {
 }
 .foot {
     background-color: blueviolet;
-    margin-top: 35%;
+    margin-top: 38%;
     padding-top: 3.5%;
     padding-bottom: 2%;
     font-size: large;
@@ -25,4 +25,25 @@ main aside {
     background-color: lightblue;
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
-  }
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul li a {
+        font-size: 1.7vw;
+        padding-right: 15%;
+    }
+    h2 {
+        font-size: small;
+    }
+    main aside {
+        padding-top: 18px;
+    }
+    .foot {
+        margin-top: 52%;
+        
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+}

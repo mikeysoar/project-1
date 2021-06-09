@@ -18,12 +18,12 @@
         <header class="bg-info text-dark d-flex flex-wrap justify-content-between">
             <h1 class="header font-weight-bold">Music By Artist</h1>
             <nav>
-                <ul class="d-flex">
+                <ul class="d-flex align-items-center">
                     <li class="d-inline-block">
-                        <a href="#music-selector" class="text-dark font-weight-bold">Mood Selctor</a>
+                        <a href="#music-selector" class="text-dark font-weight-bold">Artist's Music</a>
                     </li>
                     <li class="d-inline-block">
-                        <a href="#playlist-result" class="text-dark font-weight-bold">Your Personal Playlist</a>
+                        <a href="#playlist-result" class="text-dark font-weight-bold">Artist Bio's</a>
                     </li>
                 </ul>
             </nav>
@@ -52,20 +52,17 @@
                 </div>
             </aside>
 
-            <section>
-                <div class="col-12 col-md-8">
-                    <h2 class="subtitle">Artist's Songs: <span id="artist-search-term"></span></h2>
+            <section class="d-flex flex-wrap">
+                <div class="col-12 col-md-6 col-sm-4">
+                    <h2 class="subtitle d-inline-block">Artist's Songs: <span id="artist-search-term"></span></h2>
                     <div id ="artist-container" class="list-group"></div>
                 </div>
+
+                <div class="col-12 col-md-6 col-sm-4">
+                    <h2 class="subtitle d-inline-block ">Artist's Bio: <span id="artist-search-bio"></span></h2>
+                    <div id="bio-container" class="list-group"></div>
+                </div>
             </section>
-            <!-- match the music to the mood-->
-            <!-- images container -->
-            <!-- use of musicovery api -->
-            <!-- use of api based on area -->
-            <!-- use of bootstramp -->
-            <!-- use Modals -->
-            <!-- interactive -->
-            <!-- create cards  -->
         </main>
 
         <footer class="foot text-center font-weight-bold bg-info">
