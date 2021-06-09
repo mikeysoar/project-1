@@ -28,9 +28,22 @@ main aside {
 }
 
 @media screen and (max-width: 768px) {
-
+    header nav ul li a {
+        font-size: 1.7vw;
+        padding-right: 15%;
+    }
+    h2 {
+        font-size: small;
+    }
+    main aside {
+        padding-top: 18px;
+    }
+    .foot {
+        margin-top: 52%;
+        
+    }
 }
 
 @media screen and (max-width: 575px) {
-    
+
 }
