@@ -29,7 +29,7 @@ main aside {
 
 @media screen and (max-width: 768px) {
     header nav ul li a {
-        font-size: 1.7vw;
+        font-size: 2.00vw;
         padding-right: 15%;
     }
     h2 {
@@ -39,11 +39,30 @@ main aside {
         padding-top: 18px;
     }
     .foot {
-        margin-top: 52%;
+        margin-top: 63%;
         
     }
 }
 
 @media screen and (max-width: 575px) {
+   header nav ul li a {
+       font-size: 3.50vw;
+   }
+    main {
+       overflow: auto;
+   }
 
+   main aside {
+       width: 100%;
+   }
+
+   main section {
+       width: 100%;
+   }
+   .phone {
+       margin-top: 20%;
+   }
+   .head {
+       margin-top: 10%
+   }
 }
