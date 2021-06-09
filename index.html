@@ -16,7 +16,7 @@
 
     <body class="flex-column min-100 vh bg-secondary">
         <header class="bg-info text-dark d-flex flex-wrap justify-content-between">
-            <h1 class="header font-weight-bold">Music Mood Ring</h1>
+            <h1 class="header font-weight-bold">Music By Artist</h1>
             <nav>
                 <ul class="d-flex">
                     <li class="d-inline-block">
@@ -33,20 +33,20 @@
             <aside id="music-selector" class="col-12 col-md-4 float-left">
                 <div class="container">
                     <div class="card bg-info">
-                        <h2 class="card-header text-uppercase">Search music by mood</h2>
+                        <h2 class="card-header text-uppercase">Search Music by Artist</h2>
                         <form id="user-form" class="card-body bg-secondary">
-                            <label class="form-label">Select Mood</label>
+                            <label class="form-label">Select Artist</label>
                             <input name="mood" id="artistname" type="text" autofocus="true" class="form-input form-control" />
-                            <button type="submit" class="btn-primary form-control">How do you Feel?</button>
+                            <button type="submit" class="btn-primary form-control">Artist</button>
                         </form>
                     </div>
             
                     <div class="card bg-info">
-                        <h2 class="card-header text-uppercase">Search by Artist</h2>
+                        <h2 class="card-header text-uppercase">Search Bio by Artist</h2>
                         <form id="user-card" class="card-body bg-secondary">
-                            <label class="form-label" >Select Mood</label>
+                            <label class="form-label" >Select Artist</label>
                             <input name="artist" id="artist" type="text" autofocus="true" class="form-input form-control" />
-                            <button type="submit" class="btn-primary form-control">How do you Feel?</button>
+                            <button type="submit" class="btn-primary form-control">Bio</button>
                         </form>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
 
             <section>
                 <div class="col-12 col-md-8">
-                    <h2 class="subtitle">Mood Playlist: <span id="artist-search-term"></span></h2>
+                    <h2 class="subtitle">Artist's Songs: <span id="artist-search-term"></span></h2>
                     <div id ="artist-container" class="list-group"></div>
                 </div>
             </section>
