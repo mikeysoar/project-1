@@ -1,3 +1,7 @@
+var lyricContainerEl = document.querySelector("#lyric-container");
+var lyricSearchTerm = document.querySelector("#lyrics-search");
+var lyricFormEl = document.querySelector("#user-card");
+var lyricInputEl = document.querySelector("#lyrics");
 var artistContainerEl = document.querySelector("#artist-container");
 var artistSearchTerm = document.querySelector("#artist-search-term");
 var userFomrEl = document.querySelector("#user-form");
@@ -51,4 +55,53 @@ var displayArtist = function(search, searchTerm) {
     console.log(searchTerm);
 }
 
+var findMusicLyrics =function(search) {
+    var lyricUrl = "https://api.lyrics.ovh/v1/" + search;
+    
+    fetch(lyricUrl).then(function(response) {
+        response.json().then(function(data) {
+            displayLyrics(data, search);
+        });
+    });
+}
+
+var lyricSubmitHandler = function(event) {
+    event.preventDefault();
+
+    var lyricsWritten = lyricInputEl.value.trim();
+
+    if (lyricsWritten) {
+        findMusicLyrics(lyricsWritten);
+        lyricInputEl.value = "";
+    } else {
+        alert("Please enter the artist and title as such artist/title")
+    }
+
+    console.log(event);
+};
+
+var displayLyrics = function(search, searchTerm) {
+
+    lyricContainerEl.textContent = "";
+    lyricSearchTerm.textContent = searchTerm;
+    
+    for (var i = 0; i < search.results; i++) {
+        var lyricName = search.results[1].lyrics;
+
+        var lyricEl = document.createElement("div");
+        lyricEl.classList = "list-item flex-row justify-space-between align-center";
+
+        var lyricWord = document.createElement("span");
+        lyricWord.textContent = lyricName;
+
+        lyricEl.appendChild(lyricWord);
+
+        lyricContainerEl.appendChild
+    }
+    
+    console.log(search);
+    console.log(searchTerm);
+}
+
 userFomrEl.addEventListener("submit", artistSubmitHandler);
+lyricFormEl.addEventListener("submit", lyricSubmitHandler);
