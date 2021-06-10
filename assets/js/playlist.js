@@ -1,7 +1,7 @@
-var lyricContainerEl = document.querySelector("#lyric-container");
-var lyricSearchTerm = document.querySelector("#lyrics-search");
-var lyricFormEl = document.querySelector("#user-card");
-var lyricInputEl = document.querySelector("#lyrics");
+var storyContainerEl = document.querySelector("#story-container");
+var storySearchTerm = document.querySelector("#stories-search-term");
+var storyFormEl = document.querySelector("#user-card");
+var numberInputEl = document.querySelector("#stories");
 var artistContainerEl = document.querySelector("#artist-container");
 var artistSearchTerm = document.querySelector("#artist-search-term");
 var userFomrEl = document.querySelector("#user-form");
@@ -55,53 +55,52 @@ var displayArtist = function(search, searchTerm) {
     console.log(searchTerm);
 }
 
-var findMusicLyrics =function(search) {
-    var lyricUrl = "https://api.lyrics.ovh/v1/" + search;
+var genreMusicStories = function(search) {
+    var genreUrl = "https://binaryjazz.us/wp-json/genrenator/v1/story/" + search + "/";
     
-    fetch(lyricUrl).then(function(response) {
+    fetch(genreUrl).then(function(response) {
         response.json().then(function(data) {
-            displayLyrics(data, search);
+            displayStories(data, search);
         });
     });
 }
 
-var lyricSubmitHandler = function(event) {
+var storySubmitHandler = function(event) {
     event.preventDefault();
+    // get value from input element
+    var genreName = numberInputEl.value.trim();
 
-    var lyricsWritten = lyricInputEl.value.trim();
-
-    if (lyricsWritten) {
-        findMusicLyrics(lyricsWritten);
-        lyricInputEl.value = "";
+    if (genreName) {
+        genreMusicStories(genreName);
+        numberInputEl.value = "";
     } else {
-        alert("Please enter the artist and title as such artist/title")
+        alert("Please enter a number to receive music story")
     }
-
     console.log(event);
 };
 
-var displayLyrics = function(search, searchTerm) {
+var displayStories = function(search, searchTerm) {
+    storyContainerEl.textContent = "";
+    storySearchTerm.textContent = searchTerm;
 
-    lyricContainerEl.textContent = "";
-    lyricSearchTerm.textContent = searchTerm;
-    
-    for (var i = 0; i < search.lyrics.length; i++) {
-        var lyricName = search.lyrics[i].valueOf.name;
+    for (var i = 0; i < search.length; i++) {
+        var storyName = search[i];
 
-        var lyricEl = document.createElement("div");
-        lyricEl.classList = "list-item flex-row justify-space-between align-center";
+        var storyEl = document.createElement("div");
+        storyEl.classList = "list-item flex-row justify-space-between align-center";
 
-        var lyricWord = document.createElement("span");
-        lyricWord.textContent = lyricName;
+        var storyBro = document.createElement("span");
+        storyBro.textContent = storyName;
 
-        lyricEl.appendChild(lyricWord);
+        // append to container
+        storyEl.appendChild(storyBro);
 
-        lyricContainerEl.appendChild
+        storyContainerEl.appendChild(storyEl);
     }
-    
+
     console.log(search);
     console.log(searchTerm);
 }
 
 userFomrEl.addEventListener("submit", artistSubmitHandler);
-lyricFormEl.addEventListener("submit", lyricSubmitHandler);
+storyFormEl.addEventListener("submit", storySubmitHandler);
