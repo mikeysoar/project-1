@@ -85,8 +85,8 @@ var displayLyrics = function(search, searchTerm) {
     lyricContainerEl.textContent = "";
     lyricSearchTerm.textContent = searchTerm;
     
-    for (var i = 0; i < search.results; i++) {
-        var lyricName = search.results[1].lyrics;
+    for (var i = 0; i < search.length; i++) {
+        var lyricName = search[i].lyrics.valueOf.name;
 
         var lyricEl = document.createElement("div");
         lyricEl.classList = "list-item flex-row justify-space-between align-center";
