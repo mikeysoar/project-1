@@ -31,6 +31,13 @@ We easily constructed our HTML and CSS together and work very well together.
 Our project is put togther and working by 06/09 for presentations.
 Learning how to intigrade our APIs and getting them working.
 
+---
+> Out line frame work.
+
+<img src="./images/Joshdraft.jpg">
+
+---
+
 <img src="./images/HTML.png"/>
 
 ---
