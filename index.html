@@ -16,14 +16,14 @@
 
     <body class="flex-column min-100 vh bg-secondary">
         <header class="bg-info text-dark d-flex flex-wrap justify-content-between">
-            <h1 class="header font-weight-bold">Music By Artist</h1>
+            <h1 class="header font-weight-bold">Artist's Song's and Music Stories</h1>
             <nav>
                 <ul class="d-flex align-items-center">
                     <li class="d-inline-block">
                         <a href="#music-selector" class="text-dark font-weight-bold">Artist's Music</a>
                     </li>
                     <li class="d-inline-block">
-                        <a href="#playlist-result" class="text-dark font-weight-bold">Artist Bio's</a>
+                        <a href="#playlist-result" class="text-dark font-weight-bold">Music Story</a>
                     </li>
                 </ul>
             </nav>
@@ -42,10 +42,10 @@
                     </div>
             
                     <div class="card bg-info">
-                        <h2 class="card-header text-uppercase">Search Lyrics by Artist/Title</h2>
+                        <h2 class="card-header text-uppercase">Find A Music Story</h2>
                         <form id="user-card" class="card-body bg-secondary">
-                            <label class="form-label" >Select Artist</label>
-                            <input name="artist" id="lyrics" type="text" autofocus="true" class="form-input form-control" />
+                            <label class="form-label" >Select Random Number</label>
+                            <input name="artist" id="stories" type="text" autofocus="true" class="form-input form-control" />
                             <button type="submit" class="btn-primary form-control">Lyrics</button>
                         </form>
                     </div>
@@ -59,8 +59,8 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-sm-4">
-                    <h2 class="subtitle d-inline-block head">Artist's Bio: <span id="lyrics-search"></span></h2>
-                    <div id="lyric-container" class="list-group"></div>
+                    <h2 class="subtitle d-inline-block head">Music Story: <span id="stories-search-term"></span></h2>
+                    <div id="story-container" class="list-group"></div>
                 </div>
             </section>
         </main>
