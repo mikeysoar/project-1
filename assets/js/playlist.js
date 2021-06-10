@@ -83,16 +83,8 @@ var displayStories = function(search, searchTerm) {
     storyContainerEl.textContent = "";
     storySearchTerm.textContent = searchTerm;
 
-<<<<<<< HEAD
-    lyricContainerEl.textContent = "";
-    lyricSearchTerm.textContent = searchTerm;
-    
-    for (var i = 0; i < search.length; i++) {
-        var lyricName = search[i].lyrics.valueOf.name;
-=======
     for (var i = 0; i < search.length; i++) {
         var storyName = search[i];
->>>>>>> feature/2fetch
 
         var storyEl = document.createElement("div");
         storyEl.classList = "list-item flex-row justify-space-between align-center";
