@@ -8,6 +8,9 @@ Kiessa, Michael and Josh 8:10 PM 06/07/21
 - [Introduction](#introduction)
 - [Challenges](#challenges)
 - [Victories](#victories)
+- [Technology](#technology used)
+- [Screenshot of Webpage](#screenshot)
+- [Link to Appliation](#link)
 - [Resources](#resources)
 
 ---
@@ -54,6 +57,18 @@ Kiessa - My team-mates!
 
 <img src="./images/groupshot.png"/>
 <img src="./images/fullapp.png">
+
+## Technology
+The technology we used was Bootstrap, Javascript, JSON, HTML, and CSS
+
+## Screenshot of Website
+
+<img src="./images/finished.png.jpg">
+
+## Link to Application
+
+<a href="https://mikeysoar.github.io/project-1">Application Link</a>
+
 ## Resources 
 
 <a href="https://mikeysoar.github.io/project-1/">GitHub Repo</a>
