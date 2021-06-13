@@ -1,7 +1,7 @@
 
 Kiessa, Michael and Josh 8:10 PM 06/07/21
 # Project-1
-> Music by mood
+> Music by Mood
 ---
 ### Table of Contents
 - [Description](#description)
