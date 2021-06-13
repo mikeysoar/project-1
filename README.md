@@ -1,7 +1,7 @@
 # Project-1
 
 Kiessa, Michael and Josh 8:10 PM 06/07/21
-> Mood Ring Music
+> Artist's Songs and Music Stories
 ---
 ### Table of Contents
 - [Description](#description)
