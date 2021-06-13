@@ -117,6 +117,5 @@ var displayStories = function(search, searchTerm) {
     console.log(searchTerm);
 }
 
-
 userFomrEl.addEventListener("submit", artistSubmitHandler);
 storyFormEl.addEventListener("submit", storySubmitHandler);
