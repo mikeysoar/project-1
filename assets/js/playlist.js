@@ -1,3 +1,5 @@
+var title = [];
+
 var storyContainerEl = document.querySelector("#story-container");
 var storySearchTerm = document.querySelector("#stories-search-term");
 var storyFormEl = document.querySelector("#user-card");
@@ -27,11 +29,23 @@ var artistSubmitHandler = function(event) {
     if (artist) {
         getMusicVideo(artist);
         nameInputEl.value = "";
-    } else {
-        alert("Enter a name of an artist");
     }
+
+    var nameDataObj = {
+        name: artist
+    }
+    console.log(nameDataObj);
+
+    title.push(nameDataObj);
+
+    saveNames();
+
     console.log(event);
 };
+
+var saveNames = function() {
+    localStorage.setItem("title", JSON.stringify(title));
+}
 
 var displayArtist = function(search, searchTerm) {
     // clear old artist information
@@ -51,6 +65,7 @@ var displayArtist = function(search, searchTerm) {
 
         artistContainerEl.appendChild(searchEl);
     }
+
     console.log(search);
     console.log(searchTerm);
 }
@@ -73,8 +88,6 @@ var storySubmitHandler = function(event) {
     if (genreName) {
         genreMusicStories(genreName);
         numberInputEl.value = "";
-    } else {
-        alert("Please enter a number to receive music story")
     }
     console.log(event);
 };
@@ -98,9 +111,12 @@ var displayStories = function(search, searchTerm) {
         storyContainerEl.appendChild(storyEl);
     }
 
+
+
     console.log(search);
     console.log(searchTerm);
 }
+
 
 userFomrEl.addEventListener("submit", artistSubmitHandler);
 storyFormEl.addEventListener("submit", storySubmitHandler);

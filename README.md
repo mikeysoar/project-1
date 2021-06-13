@@ -1,7 +1,12 @@
 # Project-1
 
 Kiessa, Michael and Josh 8:10 PM 06/07/21
+<<<<<<< HEAD
+# Project-1
+> Music by Mood
+=======
 > Mood Ring Music
+>>>>>>> main
 ---
 ### Table of Contents
 - [Description](#description)
