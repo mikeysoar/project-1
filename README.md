@@ -19,7 +19,7 @@ Kiessa, Michael and Josh 8:10 PM 06/07/21
 Challenge: Group project 1 using Web APIs
 
 ## Introduction 
-Working as a team we created an app where users can choose their music playlist based of their mood or artist of their choosing.
+Working as a team we created an app where users can find songs made by certain artist and create random music stories.
 
 
 --
