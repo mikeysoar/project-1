@@ -15,8 +15,8 @@ Kiessa, Michael and Josh 8:10 PM 06/07/21
 
 ---
 
-## Description
-Challenge: Group project 1 using Web APIs
+## Application Description
+Sometimes people want to listen to songs by a certain artist but can not remeber the name of the song. Our application allows users to look up songs that were published by certain artists  
 
 ## Introduction 
 Working as a team we created an app where users can find songs made by certain artist and create random music stories.
