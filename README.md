@@ -13,16 +13,12 @@ Kiessa, Michael and Josh 8:10 PM 06/07/21
 - [Link to Appliation](#link)
 - [Resources](#resources)
 
----
+# Application Description
+This was the first frontend project we did as a group where we had to use two urls to get data from two differnt websites. The members of our group were Michael, Kelsie, and I. We originally had the idea to make a website where people can search for songs from any artist based on their mood. Eventually we had to settle for a website that can look all the songs of a certian artist with a story generator due to difficulties of getting the information of the fetch requests to show up on the website. In conclusion the application originally tried to solve the problem of allowning a user to find any song to reflect what they were feeling, but evetnually turned into allowing the user to access any song they wanted to hear from a single artist. 
 
-## Application Description
-Sometimes people want to listen to songs by a certain artist but can not remeber the name of the song. Our application allows users to look up songs that were published by certain artists  
+# Application Orgnaization
+Initailly we organized how the app was going to be coded from the ground up by giving each other specific roles to accomplish. Kiessa was given the role of styling the applicaiton with CSS, Michael was given the role of creating the html for the webiste, and I was given the role of handling the javascript that would have the fetch requests functional. All three of us were able to fulfill our foles for the first few days of getting the project done
 
-## Introduction 
-Working as a team we created an app where users can find songs made by certain artist and create random music stories.
-
-
---
 Kiessa, Michael and Josh 8:25 PM
 ## Challenges
 I think we collectively struggled with the initial Git process, being able to all make changes, push and pull. The javascript portion was also challenging to figure out. 
