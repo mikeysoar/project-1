@@ -19,7 +19,7 @@ This was the first frontend project we did as a group where we had to use two ur
 # Application Orgnaization
 Initailly we organized how the app was going to be coded from the ground up by giving each other specific roles to accomplish. Kiessa was given the role of styling the applicaiton with CSS, Michael was given the role of creating the html for the webiste, and I was given the role of handling the javascript that would have the fetch requests functional. All three of us were able to fulfill our foles for the first few days of getting the project done before we started running into complications. One complication were Kiessa becoming really busy with her schedule and not having lots of time to get her part done. The other complicaiton was Kiessa and Michael not being able to push their changes for the website onto the repostiory while I was the only one who was able to get his changes pushed up. Because of these complications I was given the responsiblity to act as the backup if Michael and Kiessa ever needed it. 
 
-
+The layout we decided on for the website was having the cards with the searchbox on the lefthand side of the webiste. The boxes that conatianed the name of the songs and the random stories were put next to the search boxes. The header section has the title of the website with links to the songs and the randomly generated music stories. The footer section has all of our names along with the name of the hypothetical company we created this website for. 
 
 Kiessa, Michael and Josh 8:25 PM
 ## Challenges
