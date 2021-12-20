@@ -21,7 +21,14 @@ Initailly we organized how the app was going to be coded from the ground up by g
 
 The layout we decided on for the website was having the cards with the searchbox on the lefthand side of the webiste. The boxes that conatianed the name of the songs and the random stories were put next to the search boxes. The header section has the title of the website with links to the songs and the randomly generated music stories. The footer section has all of our names along with the name of the hypothetical company we created this website for. 
 
-Kiessa, Michael and Josh 8:25 PM
+# Running The Application:
+To run this applicaiton on another computer software that needs to be installed on the computer if necessary is an internet browser like Google Chrome and Visual Studio Code. The links to download both of these are listed below
+- <a href="https://www.google.com/chrome/">Google Chrome Download</a>
+- <a href="https://code.visualstudio.com/docs/setup/setup-overview">Visual Studio Code Download</a>
+
+The next step is to download the code from the group repository on github. Before cloning the code from the github repostiory make sure to have the terminal in visual studio code open. The terminal in visual studio code is where the repoistory will be cloned onto the other computer with a specific command. The link for the group repository is listed below.
+- <a href="">
+
 ## Challenges
 I think we collectively struggled with the initial Git process, being able to all make changes, push and pull. The javascript portion was also challenging to figure out. 
 > Finding free APIs has been difficult.
